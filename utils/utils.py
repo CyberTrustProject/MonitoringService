@@ -136,7 +136,7 @@ def raiseAlert(alert_data, criticality, importance, notification, compromised = 
 
         fcm_headers = {
                 'Content-Type': 'application/json',
-                'Authorization': 'key=AAAAfN3rNqw:APA91bEg7Vgu_6o5U9hd9ViN9DiyEWcPpFBb9bc--6W9IDsM918oFcSCOy3jT9OAb5m7HySbBsl5lG6TgxjwSCsKEFRUS-L_brUr6_YlMwPA_MqaeuJ_Wai9LEI1Mvk_841rZshdwehn'
+                'Authorization': 'key=KEY'
             }
 
         fcm_req = requests.post('https://fcm.googleapis.com/fcm/send', json=notification_payload, headers=fcm_headers)
